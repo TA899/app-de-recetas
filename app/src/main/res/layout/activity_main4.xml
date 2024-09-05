@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/mTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/borde_redondeado"
+            android:hint="Titulo de la receta"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/btcamara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:text="CREAR MINIATURA"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            app:icon="@drawable/ic_add_photo"
+            app:iconGravity="textEnd" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <EditText
+            android:id="@+id/mIngredientesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/borde_redondeado"
+            android:hint="Ingredientes"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+        />
+
+        <EditText
+            android:id="@+id/mHistoriaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/borde_redondeado"
+            android:hint="Escribe los pasos de preparación..."
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:onClick="finalizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="REGISTRAR RECETA"
+            android:textSize="19sp"
+            android:padding="10dp"
+            app:icon="@drawable/ic_restaurant"
+            app:iconGravity="textEnd" />
+
+    </LinearLayout>
+</ScrollView>

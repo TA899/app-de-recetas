@@ -1,0 +1,85 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:visibility="visible"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/aceitunaytomate" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvnombre"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:text="tvnombre"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Autor:"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvautor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=" tvautor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvingredientes"
+                android:layout_width="209dp"
+                android:layout_height="46dp"
+                android:text="tvingredientes"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvpasos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/ButtonAgendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agendar"
+                android:textSize="18sp"
+                app:icon="@drawable/ic_calendar_month"
+                app:iconGravity="textEnd" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+
+
